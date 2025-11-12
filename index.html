@@ -3,22 +3,200 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MOVIQ Data Deletion</title>
+  <title>Data Deletion - MOVIQ</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+    
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+      min-height: 100vh;
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-top: 20px;
+    }
+    
+    .logo {
+      font-size: 32px;
+      font-weight: bold;
+      color: #8a2be2;
+      margin-bottom: 10px;
+    }
+    
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #ffffff;
+      text-align: center;
+    }
+    
+    h2 {
+      font-size: 18px;
+      margin: 25px 0 15px 0;
+      color: #e0e0e0;
+    }
+    
+    p {
+      margin-bottom: 15px;
+      color: #b0b0b0;
+    }
+    
+    .section {
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .contact-info {
+      background-color: #2d1b4e;
+      border-radius: 12px;
+      padding: 15px;
+      margin: 20px 0;
+      text-align: center;
+    }
+    
+    .contact-info a {
+      color: #a78bfa;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      padding: 20px 0;
+      color: #666;
+      font-size: 14px;
+    }
+    
+    .nav-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      border-top: 1px solid #333;
+      z-index: 100;
+    }
+    
+    .nav-item {
+      text-align: center;
+      color: #888;
+      font-size: 12px;
+      flex: 1;
+    }
+    
+    .nav-item.active {
+      color: #8a2be2;
+    }
+    
+    .content {
+      padding-bottom: 70px; /* Space for the navigation bar */
+    }
+    
+    .back-button {
+      display: inline-flex;
+      align-items: center;
+      color: #8a2be2;
+      margin-bottom: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .back-button::before {
+      content: "←";
+      margin-right: 5px;
+    }
+    
+    ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+    
+    li {
+      color: #b0b0b0;
+      margin-bottom: 10px;
+    }
+    
+    .step-box {
+      background-color: #2d1b4e;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    
+    .step-title {
+      font-weight: bold;
+      color: #a78bfa;
+      margin-bottom: 5px;
+    }
+    
+    .highlight {
+      color: #8a2be2;
+      font-weight: 500;
+    }
+  </style>
 </head>
 <body>
-  <h1>Data Deletion Instructions for MOVIQ</h1>
-  <p>
-    If you have logged in to MOVIQ using Facebook and wish to delete your data, 
-    please follow one of the options below:
-  </p>
-  <ul>
-    <li>Send an email to <a href="mailto:chkilisaif776@gmail.com">chkilisaif776@gmail.com</a> 
-        with the subject “Delete My Data”.</li>
-    <li>Your Facebook user ID and all related data will be permanently deleted from our database within 7 days.</li>
-  </ul>
-  <p>
-    You can also remove MOVIQ’s access directly from your Facebook account settings 
-    under “Settings & Privacy → Apps and Websites”.
-  </p>
+  <div class="content">
+    <div class="header">
+      <div class="logo">MOVIQ</div>
+      <h1>Data Deletion Instructions</h1>
+    </div>
+    
+    <a href="#" class="back-button">Back</a>
+    
+    <div class="section">
+      <p>If you have logged in to MOVIQ using Facebook and wish to delete your data, please follow one of the options below:</p>
+    </div>
+    
+    <div class="section">
+      <h2>Option 1: Request Data Deletion via Email</h2>
+      <div class="step-box">
+        <div class="step-title">Step 1: Send an email request</div>
+        <p>Send an email to:</p>
+        <div class="contact-info">
+          <a href="mailto:chkilisaif776@gmail.com">chkilisaif776@gmail.com</a>
+        </div>
+        <p>with the subject <span class="highlight">"Delete My Data"</span>.</p>
+      </div>
+      
+      <div class="step-box">
+        <div class="step-title">Step 2: Confirmation and processing</div>
+        <p>Your Facebook user ID and all related data will be permanently deleted from our database within 7 days of your request.</p>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>Option 2: Remove Access via Facebook</h2>
+      <div class="step-box">
+        <p>You can also remove MOVIQ's access directly from your Facebook account settings:</p>
+        <p><span class="highlight">Settings & Privacy → Apps and Websites</span></p>
+        <p>Find MOVIQ in the list and remove it to revoke access.</p>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>MOVIQ - Your movie companion</p>
+    </div>
+  </div>
+
 </body>
 </html>
